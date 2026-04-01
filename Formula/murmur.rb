@@ -27,7 +27,9 @@ class Murmur < Formula
   end
 
   def install
-    bin.install "murmur"
+    # Binary in tarball is named with platform suffix; rename to 'murmur'
+    bin_name = Dir["murmur-*"].first || "murmur"
+    bin.install bin_name => "murmur"
   end
 
   service do
