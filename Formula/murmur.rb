@@ -30,6 +30,13 @@ class Murmur < Formula
     bin.install "murmur"
   end
 
+  service do
+    run [opt_bin/"murmur", "start"]
+    keep_alive true
+    log_path var/"log/murmur.log"
+    error_log_path var/"log/murmur.log"
+  end
+
   test do
     assert_match version.to_s, shell_output("#{bin}/murmur --version")
   end
