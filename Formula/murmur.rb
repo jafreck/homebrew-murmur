@@ -2,27 +2,27 @@
 # frozen_string_literal: true
 
 class Murmur < Formula
-  desc "Cross-platform, local voice dictation powered by whisper.cpp"
+  desc "100% on-device voice dictation — multi-engine ASR, no cloud"
   homepage "https://github.com/jafreck/murmur"
-  version "0.1.1"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/jafreck/murmur/releases/download/v#{version}/murmur-darwin-arm64.tar.gz"
-      sha256 "UPDATE_WITH_ACTUAL_SHA256"
+      sha256 "PLACEHOLDER_DARWIN_ARM64"
     end
 
     on_intel do
       url "https://github.com/jafreck/murmur/releases/download/v#{version}/murmur-darwin-x86_64.tar.gz"
-      sha256 "UPDATE_WITH_ACTUAL_SHA256"
+      sha256 "PLACEHOLDER_DARWIN_X86_64"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/jafreck/murmur/releases/download/v#{version}/murmur-linux-x86_64.tar.gz"
-      sha256 "UPDATE_WITH_ACTUAL_SHA256"
+      sha256 "PLACEHOLDER_LINUX_X86_64"
     end
   end
 
